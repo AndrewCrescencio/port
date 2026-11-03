@@ -7,7 +7,6 @@ const emit = defineEmits<{ open: [1 | 2]; close: [1 | 2]; minimize: [1 | 2] }>()
 const hovered = ref<number | null>(null);
 const menu = ref<{ id: 1 | 2; x: number; y: number } | null>(null);
 const apps = [
-  { id: 1 as const, name: 'About Me', image: 'https://icon-library.com/images/mac-os-icon/mac-os-icon-1.jpg', icon: User },
   { id: 2 as const, name: 'iTunes', image: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png', icon: Music },
 ];
 function scale(index: number) {
